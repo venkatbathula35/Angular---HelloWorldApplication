@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+	<title>Hello World</title>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<script type="text/javascript" src="../js/angular.min.js"></script>
+	<script type="text/javascript" src="../js/app.js"></script>
+</head>
+<body>
+	<div ng-controller="Maincontroller">
+		<div><h1>Hello {{DefaultName}}<h1></div>
+		<div>
+			<h2>This is Sample Hello World Application With Angular</h2>
+			<h3>Please Update your Name using below Textbox</h3>
+		</div>
+		<div>
+			<input type="text" name="name" ng-model="inputname" class="namesubmit" ng-keydown="$event.which === 13 && submit(inputname)">
+			<button ng-click="submit(inputname)" >Submit</button>
+		</div>
+	</div>
+</body>
+</html>

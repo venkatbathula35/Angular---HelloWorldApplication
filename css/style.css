@@ -1,0 +1,7 @@
+body{background-color: #000;}
+h1{color: blue;}
+h2{color:red;}
+h3{color: white;}
+div{text-align: center;}
+input, button{padding: 12px; border: 0;}
+button{background: chartreuse;}
